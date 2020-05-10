@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./homePage.css">
+</head>
+
+<body>
+  <header>
+    <div class="gmenu">
+      <nav>
+        <ul>
+          <li><a href="">ホーム</a></li>
+          <li><a href="">店舗入力</a></li>
+          <li><a href="">店舗一覧</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="display">
+    <div id="map"></div>
+    <div id="textbox">
+      <table id="table">
+        <tbody>
+          <tr>
+            <td><span style="border-bottom: solid 2px #8a8579;">店舗名</span></td>
+          </tr>
+          <tr id="info_name">
+            <td id="info_name_child"> <br></td>
+          </tr>
+          <tr>
+            <td><span style="border-bottom: solid 2px #8a8579;">詳細</span></td>
+          </tr>
+          <tr id="info_description">
+            <td id="info_description_child"> <br></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="homePageMapViewModel.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1audfp_9M-W3XFEOT_lpjGHFN5rFC05s &callback=initMap"></script>
+</body>
+
+</html>

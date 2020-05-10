@@ -1,0 +1,70 @@
+.gmenu{
+    height: 64px;
+    position: relative;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    text-align: right;
+    z-index: 1;
+    line-height:0;
+}
+.gmenu ul{
+    list-style:none;/*点を消す*/
+    margin: 0px;/*外側の余白*/
+    padding: 0px;/*内側の余白*/
+}
+.gmenu ul li {
+    display: inline-block;/*ブロック要素を変える*/
+    padding: 16px 8px;/*上下 左右の内側の余白 -> メニューの位置*/
+}
+.gmenu ul li a {
+    color: #333;
+    display: block;/*ブロック要素に変換*/
+    text-decoration: none;/*下線を消す*/
+    padding: 16px 8px;/*上下 左右の内側の余白 -> 押せる領域のサイズ*/
+}
+#display {
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+#map {
+    z-index: 10;
+    height: 100%;
+    width: auto;
+}
+#textbox {
+    z-index: 20;
+    background: red;
+}
+#table{
+    z-index: 30;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    table-layout:fixed;
+    width:260px;
+    font-size: 15pt;
+    line-height: 25px;
+    background: white;
+    padding: 7px 10px 10px 10px;
+    margin: 2em 0;
+    color: #8a8579;
+    background: #fff8e8;
+    border-bottom: solid 6px #c7c1b5;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+#table tr {
+    padding: 3px 3px 7px 3px;
+    left: 0;
+}
+#table tr td{
+    padding: 1px 3px 5px 3px;
+}
+#info_name_child {
+    word-wrap:break-word;
+}
+#info_description_child {
+    word-wrap:break-word;
+}
